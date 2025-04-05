@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Catalogue</h1>
+    </header>
+    <main class="main-container">
+        <!-- Message Section -->
+        <section id="message" class="message-section"></section>
+
+        <!-- Buttons Section -->
+        <section class="button-container">
+            <button class="btn" onclick="showLogin()">Login</button>
+            <button class="btn" onclick="showSignup()">Signup</button>
+        </section>
+
+        <!-- Login Form -->
+        <section id="login" class="form-container hidden">
+            <h2>Login</h2>
+            <form onsubmit="event.preventDefault(); login();">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </section>
+
+        <!-- Signup Form -->
+        <section id="signup" class="form-container hidden">
+            <h2>Signup</h2>
+            <form onsubmit="event.preventDefault(); signup();">
+                <label for="signupUsername">Username:</label>
+                <input type="text" id="signupUsername" placeholder="Username" required>
+                
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                
+                <label for="signupPhone">Phone (optional):</label>
+                <input type="text" id="signupPhone" placeholder="Phone">
+                
+                <button type="submit" class="btn">Signup</button>
+            </form>
+        </section>
+
+        <!-- Product Gallery -->
+        <section id="gallery" class="gallery-container hidden">
+            <h2>Product Gallery</h2>
+            <div id="galleryItems" class="gallery-items"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Catalogue App</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+     
+
+
+
+
